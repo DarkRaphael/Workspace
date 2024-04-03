@@ -1,0 +1,28 @@
+[2024-03-02T18:50:48.318+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_ncei_data.download_html_data manual__2024-03-02T18:50:12+00:00 [queued]>
+[2024-03-02T18:50:48.336+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_ncei_data.download_html_data manual__2024-03-02T18:50:12+00:00 [queued]>
+[2024-03-02T18:50:48.336+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-03-02T18:50:48.469+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): download_html_data> on 2024-03-02 18:50:12+00:00
+[2024-03-02T18:50:48.487+0000] {standard_task_runner.py:60} INFO - Started process 100 to run task
+[2024-03-02T18:50:48.490+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_ncei_data', 'download_html_data', 'manual__2024-03-02T18:50:12+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/sample.py', '--cfg-path', '/tmp/tmphv5khwn4']
+[2024-03-02T18:50:48.491+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask download_html_data
+[2024-03-02T18:50:48.703+0000] {task_command.py:423} INFO - Running <TaskInstance: fetch_ncei_data.download_html_data manual__2024-03-02T18:50:12+00:00 [running]> on host a890577b40a7
+[2024-03-02T18:50:49.061+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='fetch_ncei_data' AIRFLOW_CTX_TASK_ID='download_html_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T18:50:12+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T18:50:12+00:00'
+[2024-03-02T18:50:49.062+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-02T18:50:49.064+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl https://www.ncei.noaa.gov/data/local-climatological-data/access/2001/ --create-dirs -o /tmp/html/2001.html']
+[2024-03-02T18:50:49.084+0000] {subprocess.py:86} INFO - Output:
+[2024-03-02T18:50:49.162+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-03-02T18:50:49.163+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-03-02T18:51:00.457+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0
+[2024-03-02T18:51:00.458+0000] {subprocess.py:93} INFO - curl: (7) Failed to connect to www.ncei.noaa.gov port 443 after 11295 ms: Couldn't connect to server
+[2024-03-02T18:51:00.463+0000] {subprocess.py:97} INFO - Command exited with return code 7
+[2024-03-02T18:51:00.927+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 7.
+[2024-03-02T18:51:00.933+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_ncei_data, task_id=download_html_data, execution_date=20240302T185012, start_date=20240302T185048, end_date=20240302T185100
+[2024-03-02T18:51:01.065+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 12 for task download_html_data (Bash command failed. The command returned a non-zero exit code 7.; 100)
+[2024-03-02T18:51:01.107+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-02T18:51:01.471+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
