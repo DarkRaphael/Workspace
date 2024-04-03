@@ -1,0 +1,70 @@
+[2024-03-09T07:03:55.909+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:03:55.972+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CE20B015_Assignment2.py for tasks to queue
+[2024-03-09T07:03:56.042+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:03:56.008+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:03:57.318+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:03:57.304+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/CE20B015_Assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/CE20B015_Assignment2.py", line 19, in <module>
+    import apache_beam as beam
+ModuleNotFoundError: No module named 'apache_beam'
+[2024-03-09T07:03:57.325+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:03:57.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CE20B015_Assignment2.py took 1.890 seconds
+[2024-03-09T07:04:27.980+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:04:28.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CE20B015_Assignment2.py for tasks to queue
+[2024-03-09T07:04:28.089+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:04:28.074+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:04:30.221+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:04:30.207+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/CE20B015_Assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/CE20B015_Assignment2.py", line 19, in <module>
+    import apache_beam as beam
+ModuleNotFoundError: No module named 'apache_beam'
+[2024-03-09T07:04:30.225+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:04:31.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CE20B015_Assignment2.py took 3.136 seconds
+[2024-03-09T07:05:01.348+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:01.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CE20B015_Assignment2.py for tasks to queue
+[2024-03-09T07:05:01.357+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:05:01.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:01.658+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:05:01.646+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/CE20B015_Assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/CE20B015_Assignment2.py", line 19, in <module>
+    import apache_beam as beam
+ModuleNotFoundError: No module named 'apache_beam'
+[2024-03-09T07:05:01.661+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:01.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CE20B015_Assignment2.py took 0.645 seconds
+[2024-03-09T07:05:32.213+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:32.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CE20B015_Assignment2.py for tasks to queue
+[2024-03-09T07:05:32.219+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:05:32.218+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:32.387+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:05:32.381+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/CE20B015_Assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/CE20B015_Assignment2.py", line 19, in <module>
+    import apache_beam as beam
+ModuleNotFoundError: No module named 'apache_beam'
+[2024-03-09T07:05:32.390+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:32.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CE20B015_Assignment2.py took 0.453 seconds
+[2024-03-09T07:05:54.838+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:54.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CE20B015_Assignment2.py for tasks to queue
+[2024-03-09T07:05:54.844+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:05:54.842+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:55.075+0000] {logging_mixin.py:188} INFO - [2024-03-09T07:05:55.068+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/CE20B015_Assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/CE20B015_Assignment2.py", line 19, in <module>
+    import apache_beam as beam
+ModuleNotFoundError: No module named 'apache_beam'
+[2024-03-09T07:05:55.078+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/CE20B015_Assignment2.py
+[2024-03-09T07:05:55.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CE20B015_Assignment2.py took 1.016 seconds
